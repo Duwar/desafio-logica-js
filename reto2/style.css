@@ -1,0 +1,198 @@
+@import url('https://fonts.cdnfonts.com/css/tabarra-shadow');
+@import url('https://fonts.cdnfonts.com/css/roundedsquare');
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-pagella');
+
+
+:root {
+    --fuente-titulopr1: 'Tabarra Shadow', sans-serif;
+    --fuente-titulopr2: 'RoundedSquare', sans-serif;
+    --fuente-body: 'TeXGyrePagella', sans-serif;
+}
+
+body {
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* ----- header ------- */
+header {
+    background-size: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-family: var(--fuente-titulopr1);
+    font-size: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Tituloprt2 {
+    font-family: var(--fuente-titulopr2);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.fa-sack-dollar {
+    font-size: 70px;
+    padding: 20px;
+}
+.botonCierre{
+    position: fixed; /* Lo saca del flujo normal y lo posiciona respecto al viewport */
+    top: 20px;       /* Distancia desde la parte superior */
+    right: 20px;     /* Distancia desde la parte derecha */
+    padding: 10px 15px;
+}
+
+/* ------- Main ---------- */
+
+h2 {
+    margin: 0;
+}
+
+#formularioAcceso {
+    font-family: var(--fuente-body);
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#formularioAcceso input {
+    font-family: var(--fuente-body);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-body);
+    font-size: 20px;
+}
+
+#saldoActual {
+    font-family: var(--fuente-body);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.retiro {
+    margin-top: 20px;
+    font-family: var(--fuente-body);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.retiro input {
+    margin: 10px;
+    font-family: var(--fuente-body);
+    font-size: 20px;
+}
+
+button {
+    font-family: var(--fuente-body);
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 6px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#resultMessage {
+    padding: 40px;
+}
+
+.access-denied {
+    display: flex;
+    box-sizing: 50vh;
+    background-color: rgba(211, 111, 111, 0.76);
+    border-radius: 50vh;
+    box-shadow:
+        0 0 5px 5px rgb(255, 255, 255) inset,
+        0 0 10px 10px rgb(255, 255, 255) inset,
+        0 0 20px 40px rgb(255, 255, 255) inset,
+        0 0 40px 50px rgb(255, 255, 255) inset;
+    font-size: 35px;
+    font-family: var(--fuente-body);
+    color: red;
+}
+
+.access-granted {
+    font-family: var(--fuente-body);
+    color: green;
+    font-size: 30px;
+    background-color: rgba(111, 255, 106, 0.76);
+    box-shadow:
+        0 0 5px 5px rgb(255, 255, 255) inset,
+        0 0 10px 10px rgb(255, 255, 255) inset,
+        0 0 20px 40px rgb(255, 255, 255) inset,
+        0 0 40px 50px rgb(255, 255, 255) inset;
+}
+
+.message-success {
+    color: green;
+}
+
+.message-error {
+    color: red;
+}
+
+.message-info {
+    color: blue;
+}
+
+/* ------- Footer ---------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-size: cover;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+}

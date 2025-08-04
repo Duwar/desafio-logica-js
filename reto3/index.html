@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tabla de multiplicación</h1>
+    </header>
+    <main>
+        <div class="pregunta">
+            <label for="numero">Numero:</label>
+            <input type="number" id="numero" required min="1" placeholder="Ingresa tu nuevo numero" autofocus>
+            <button id="generarTablaBtn">Generar Tabla</button>
+        </div>
+
+        <div id="resultadoTabla" class="resultado"></div>
+
+        <div class="message-area" id="messageArea"></div>
+
+        <div class="otra-Tabla" id="otraTabla">
+            <p>Deseas ingresar un nuevo numero para una nueva tabla de multiplicar</p>
+            <button type="submit" id="otraTablaSi">Sí</button>
+            <button type="submit" id="otraTablaNo">No</button>
+        </div>        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Duwar Alexander Rippe Amaya. All rights reserved.</p>
+        <a href="https://github.com/Duwar" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/duwar-rippe-00317ab9/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

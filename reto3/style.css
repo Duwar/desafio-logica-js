@@ -1,0 +1,142 @@
+@import url('https://fonts.cdnfonts.com/css/secuestro-express');
+@import url('https://fonts.cdnfonts.com/css/love-you');
+@import url('https://fonts.cdnfonts.com/css/funga-donga-binge');
+@import url('https://fonts.cdnfonts.com/css/denne-freakshow');
+@import url('https://fonts.cdnfonts.com/css/fathers');
+
+
+:root {
+    --fuente-titulo:  'Secuestro Express', sans-serif;
+    --fuente-body: 'Love You', sans-serif;
+    --fuente-h2: 'Funga Donga Binge', sans-serif;
+    --fuente-tabla: 'Denne Freakshow', sans-serif;
+    --fuente-texto: 'Fathers', sans-serif;
+}    
+
+body {
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* ----- header ------- */
+h1 {
+    font-family: var(--fuente-titulo);
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    text-align: center;
+}
+
+/* ------- Main ---------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    
+h2{
+    font-family: var(--fuente-titulo);
+    font-size: 40px;
+    text-align: center;
+}
+.pregunta {
+    font-family: var(--fuente-body);
+    font-size: 25px;
+}
+.pregunta input{
+    font-family: var(--fuente-body);
+    font-size: 30px;
+    width: 40vh;
+}
+
+button {
+    font-family: var(--fuente-body);
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 0.8rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.resultado{
+    font-family: var(--fuente-tabla);
+    font-size: 30px;
+    text-align: center;
+}
+.message-area{
+    font-family: var(--fuente-texto);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom:60px ;
+    padding: 10px;
+}
+
+.message-area.info {
+    background-color: #e7f3fe;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
+
+.message-area.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message-area.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.hidden {
+    display: none;
+}
+.otra-Tabla{
+    font-family: var(--fuente-texto);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.otra-Tabla p{
+    margin: 0;
+}
+
+/* ------- Footer ---------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-size: cover;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+}
