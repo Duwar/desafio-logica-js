@@ -1,8 +1,8 @@
 # 🚀 Desafíos de Lógica con JavaScript
 
-¡Hola! 👋 Este repositorio es una colección de soluciones a una serie de retos de programación enfocados en la lógica y la interactividad con JavaScript.
+¡Hola! 👋 Este repositorio contiene ña colección de soluciones a3 retos de programación enfocados en la lógica y la interactividad con JavaScript.
 
-## ✨ Retos Completados
+## ✨ Retos:
 
 ### 1. 🚪 Reto de Control de Acceso
 
